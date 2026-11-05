@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import {
     Text,
     View,
@@ -16,10 +15,10 @@ import { MaterialIcons } from '@expo/vector-icons';
 import { themas } from "../../global/themes";
 
 type LoginProps = {
-    onLoginSuccess?: () => void;
+    navigation: any;
 };
 
-export default function Login({ onLoginSuccess }: LoginProps) {
+export default function Login({ navigation }: LoginProps) {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [loading, setLoading] = useState(false);
@@ -36,9 +35,9 @@ export default function Login({ onLoginSuccess }: LoginProps) {
             setTimeout(() => {
                 if (email === 'abdielb@yahoo.com' && password === '12345') {
                     Alert.alert('Logado com sucesso');
-                    onLoginSuccess?.();
+                    navigation.replace('Home');
                 } else {
-                    Alert.alert('Usuario não encontrado');
+                    Alert.alert('Usuário não encontrado');
                 }
 
                 setLoading(false);

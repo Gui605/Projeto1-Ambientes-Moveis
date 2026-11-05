@@ -7,7 +7,7 @@ import {
     ActivityIndicator,
     ScrollView
 } from 'react-native';
-import { MaterialIcons, FontAwesome, Octicons } from '@expo/vector-icons';
+import { FontAwesome, Octicons } from '@expo/vector-icons';
 import AntDesign from '@expo/vector-icons/AntDesign';
 import { style } from "./styles";
 import { Input } from "../../components/input";

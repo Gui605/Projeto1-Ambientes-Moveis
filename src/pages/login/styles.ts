@@ -1,90 +1,84 @@
-import { Dimensions, StyleSheet } from "react-native";
+import { StyleSheet } from "react-native";
 import { themas } from "../../global/themes";
 
 export const style = StyleSheet.create({
-    container:{
-        flex:1,
+    container: {
+        flexGrow: 1,
+        backgroundColor: '#FFFFFF',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        paddingHorizontal: 20,
+        paddingVertical: 30,
     },
-    boxTop:{
-        height:Dimensions.get('window').height/3,
-        width:'100%',
-        //backgroundColor:'red',
+    boxTop: {
+        width: '100%',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        marginBottom: 20,
     },
-    boxMid:{
-        height:Dimensions.get('window').height/3,
-        width:'100%',
-        //backgroundColor:'green',
-        //alignItems:'center',
-        //justifyContent:'center'
-        paddingHorizontal:37
+    boxMid: {
+        width: '100%',
+        marginBottom: 20,
     },
-    titleInput:{
-        marginLeft:5,
-        color:themas.Colors.gray,
-        marginTop:20
+    titleInput: {
+        marginLeft: 5,
+        color: themas.Colors.gray,
+        marginTop: 15,
+        fontSize: 14,
     },
-    BoxInput:{
-        width:'100%',
-        height:40,
+    BoxInput: {
+        width: '100%',
+        height: 48,
         borderWidth: 1,
         borderRadius: 40,
-        marginTop: 10,
-        flexDirection:'row',
-        alignItems:'center',
-        paddingHorizontal:10,
-        backgroundColor:themas.Colors.lightGray,
-        borderColor:themas.Colors.lightGray
+        marginTop: 8,
+        flexDirection: 'row',
+        alignItems: 'center',
+        paddingHorizontal: 15,
+        backgroundColor: themas.Colors.lightGray,
+        borderColor: themas.Colors.lightGray,
     },
-    Input:{
-        height:'100%',
+    Input: {
+        height: '100%',
         width: '90%',
-        borderRadius:40
+        fontSize: 16,
     },
-    boxBottom:{
-        height:Dimensions.get('window').height/3,
-        width:'100%',
-        //backgroundColor:'blue'
-        alignItems:'center',
-        marginTop:20
+    boxBottom: {
+        width: '100%',
+        alignItems: 'center',
+        marginTop: 10,
+        marginBottom: 15,
     },
-    button:{
-        width:250,
-        height:50,
-        alignItems:'center',
-        justifyContent:'center',
-        backgroundColor:themas.Colors.primary,
-        borderRadius:40,
-        shadowColor: "#000",
-        shadowOffset: {
-            width: 0,
-            height: 12,
-        },
-        shadowOpacity: 0.58,
-        shadowRadius: 16.00,
-
-        elevation: 24,
+    button: {
+        width: '100%',
+        height: 50,
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: themas.Colors.primary,
+        borderRadius: 40,
+        elevation: 5,
     },
-    textButton:{
-        fontSize:20,
-        color:themas.Colors.secondary,
-        fontWeight:'bold'
+    textButton: {
+        fontSize: 18,
+        color: themas.Colors.secondary,
+        fontWeight: 'bold',
     },
-    textBottom:{
-        fontSize:16,
-        color:themas.Colors.gray
+    textBottom: {
+        fontSize: 15,
+        color: themas.Colors.gray,
+        textAlign: 'center',
     },
-    logo:{
-        width: 80, //define a menor largura possivel
-        height: 80, //define a menor altura possivel
-        resizeMode:"contain" //garantir que a imagem não mude de proporção
+    logo: {
+        width: 70,
+        height: 70,
+        resizeMode: "contain",
+        marginBottom: 10,
     },
-    text:{
-        fontWeight:'bold',
-        fontSize:22,
-        marginTop:30
+    text: {
+        fontWeight: 'bold',
+        fontSize: 18,
+        textAlign: 'center',
+        marginTop: 5,
+        color: '#333',
     }
-})
+});
